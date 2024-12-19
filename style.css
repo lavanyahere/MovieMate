@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #f0f0f0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(./img/main\ pg\ 2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  color: #fff;
+  padding: 0.625rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin-left: 1.25rem;
+}
+
+nav .active {
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+nav .active:hover {
+  background-color: #575757;
+  transform: translateY(-3px);
+}
+
+.hero {
+  color: #fff;
+  padding: 60px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero .container p {
+  color: #cccccc;
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
+.hero .container h2 {
+  position: relative;
+  color: #0e3742;
+  outline: none;
+  animation: animate 4s infinite ease-in;
+}
+
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #c2c2c283;
+    text-shadow: none;
+  }
+
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 100px #03bcf4;
+  }
+}
+
+.hero p {
+  margin-bottom: 30px;
+}
+
+.hero div .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e67e22;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.hero div .btn:hover {
+  background-color: #d35400;
+  transform: translateY(-3px);
+}
+
+.reviews {
+  padding: 40px 0;
+}
+
+.reviews .container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.reviews h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.review {
+  background-color: #2a2a2a98;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.review:hover {
+  transform: translateY(-10px);
+}
+
+.reviews .container .movie-img img {
+  height: 200px;
+  width: 200px;
+  border-radius: 2rem;
+  border: 2px solid #f57505;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.reviews .container .movie-img img:hover {
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+}
+
+.reviews .container .review {
+  display: flex;
+  flex-direction: row;
+}
+
+.review h3 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.reviews .container .review .movie-img img {
+  height: 180px;
+  width: 250px;
+}
+
+.reviews .container .review .info {
+  margin-left: 7rem;
+}
+
+.reviews .container .review .info a,
+p {
+  margin-top: 2rem;
+  color: #cccccc;
+}
+
+.reviews .review .info a:hover {
+  color: red;
+}
+
+#follow-heading {
+  color: #c2c2c2;
+  font-weight: 500;
+  padding-left: 44%;
+}
+
+h3 {
+  text-align: center;
+}
+
+#word span {
+  position: relative;
+}
+
+#word span::before {
+  content: "Us ON!";
+  color: #ff7f50;
+  animation: words 20s infinite;
+}
+
+#word span::after {
+  content: "";
+  position: absolute;
+  width: calc(100% + 8px);
+  height: 100%;
+  background-color: #2f3542;
+  border-left: 2px solid #ff7f50;
+  right: -8px;
+  animation: curson 0.8s infinite;
+  animation: cursor 0.8s infinite, typing 20s steps(14) infinite;
+}
+
+@keyframes cursor {
+  to {
+    border-left: 2px solid #ff575000;
+  }
+}
+
+@keyframes words {
+  0%,
+  20% {
+    content: "#Instagram";
+    color: orange;
+  }
+  21%,
+  40% {
+    content: "#Facebook";
+    color: orange;
+  }
+  41%,
+  60% {
+    content: "#Twitter";
+    color: orange;
+  }
+  61%,
+  80% {
+    content: "#Instagram";
+    color: orange;
+  }
+  81%,
+  90% {
+    content: "#Facebook";
+    color: orange;
+  }
+  91%,
+  100% {
+    content: "#Twitter";
+    color: orange;
+  }
+}
+
+@keyframes typing {
+  10%,
+  15%,
+  30%,
+  35%,
+  50%,
+  55%,
+  70%,
+  75%,
+  90%,
+  95% {
+    width: 0;
+  }
+  5%,
+  20%,
+  25%,
+  40%,
+  45%,
+  60%,
+  65%,
+  80%,
+  85% {
+    width: calc(100% + 8px);
+  }
+}
+
+.follow-section {
+  height: 10rem;
+  display: flex;
+  padding: 0 4em;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-self: center;
+  margin-top: 3rem;
+}
+
+.follow-section {
+  perspective: 1000px;
+  height: 40vh;
+  width: 100%;
+  cursor: pointer;
+}
+
+.follow-section .follow-cards .card {
+  transform-style: preserve-3d;
+  height: 100%;
+  width: 300px;
+  transition: 0.5s ease;
+}
+
+.follow-section .follow-cards .card .front,
+.follow-section .follow-cards .card .back {
+  height: 100%;
+  width: 100%;
+  transform-style: preserve-3d;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0.4em;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  backface-visibility: hidden;
+}
+
+.follow-section .follow-cards .card .front {
+  background: linear-gradient(to right, #5a585a, #090947);
+}
+
+.follow-section .follow-cards .card .front img {
+  width: 5em;
+}
+
+.follow-section .follow-cards .card .front .content {
+  transform: translateZ(60px);
+}
+
+.follow-section .follow-cards h3 {
+  font-size: 22px;
+  margin-top: 1em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.follow-section .follow-cards p {
+  font-size: 14px;
+  line-height: 2em;
+  letter-spacing: 0.02em;
+  padding: 0 3em;
+}
+
+.follow-section .follow-cards .card .back {
+  background-color: #28253a;
+  transform: rotateX(180deg);
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+}
+
+.follow-section .follow-cards:hover .card {
+  transform: rotateX(180deg);
+}
+
+@media screen and (min-width: 992px) {
+  .follow-section {
+    padding: 0 1em;
+  }
+
+  .follow-section .follow-cards {
+    flex-basis: 0 0 33.33;
+    max-width: 33.33%;
+    padding: 0 1.5em;
+  }
+}
+
+footer {
+  position: relative;
+  bottom: -10em;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0px;
+  margin-top: 40px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+  background-color: #333;
+}
